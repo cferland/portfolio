@@ -1,38 +1,265 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
+body {
+  background-color: #222;
+  color: #ccc;
+  font-size: larger;
+}
+
+main {
+  text-align: justify;
+  padding: 10px 8%;
+  border-width: 2px 0 2px 0;
+  border-style: solid;
+  -o-border-image: -o-linear-gradient(left, rgba(0,0,0,0) 5%, #ee2233, #eebb33, #22bb33, #2299ee, rgba(0, 0, 0, 0) 95%) 1;
+     border-image: -webkit-gradient(linear, left top, right top, color-stop(5%, rgba(0,0,0,0)), color-stop(#ee2233), color-stop(#eebb33), color-stop(#22bb33), color-stop(#2299ee), color-stop(95%, rgba(0, 0, 0, 0))) 1;
+     border-image: linear-gradient(to right, rgba(0,0,0,0) 5%, #ee2233, #eebb33, #22bb33, #2299ee, rgba(0, 0, 0, 0) 95%) 1;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background: -webkit-gradient(linear, left top, right top, color-stop(10%, #ee2233), color-stop(#eebb33), color-stop(#22bb33), color-stop(90%, #2299ee));
+  background: -o-linear-gradient(left, #ee2233 10%, #eebb33, #22bb33, #2299ee 90%);
+  background: linear-gradient(to right, #ee2233 10%, #eebb33, #22bb33, #2299ee 90%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  padding-top: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  margin: 0;
+  background: -o-radial-gradient(#fff, rgba(0,0,0,0));
+  background: radial-gradient(#fff, rgba(0,0,0,0));
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+h2 {
+  text-align: center;
+  background: -o-radial-gradient(#fff, rgba(0,0,0,0));
+  background: radial-gradient(#fff, rgba(0,0,0,0));
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 12px auto;
+}
+
+.left-title {
+  text-align: right;
+  padding-right: 15px;
+  width: 30%;
+}
+
+.center-title {
+  border-width: 1px;
+  border-style: solid;
+  -o-border-image: -o-linear-gradient(top, rgba(0,0,0,0), #fff, rgba(0,0,0,0)) 1 100%;
+     border-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0)), color-stop(#fff), to(rgba(0,0,0,0))) 1 100%;
+     border-image: linear-gradient(to bottom, rgba(0,0,0,0), #fff, rgba(0,0,0,0)) 1 100%;
+  padding: 0 5px;
+  text-align: center;
+  width: 30%;
+}
+
+.right-title {
+  text-align: left;
+  padding-left: 15px;
+  width: 30%;
+}
+
+ul {
+  list-style-type: none;
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(15%, #ee2233), color-stop(#eebb33), color-stop(#22bb33), color-stop(75%, #2299ee));
+  background: -o-linear-gradient(left top, #ee2233 15%, #eebb33, #22bb33, #2299ee 75%);
+  background: linear-gradient(to right bottom, #ee2233 15%, #eebb33, #22bb33, #2299ee 75%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  font-size: x-large;
+  display: -ms-grid;
+  display: grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 130px);
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-left: 20px;
+  margin: 20px auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+.no-gradient {
+  background: #ccc;
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: #ccc;
+  color: #ccc;
+  padding-left: 2px;
+  font-size: large;
+}
+
+img {
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  -o-border-image: -o-radial-gradient(rgba(0,0,0,0), #fff, rgba(0,0,0,0)) 1;
+     border-image: radial-gradient(rgba(0,0,0,0), #fff, rgba(0,0,0,0)) 1;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  padding-bottom: 20px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+label {
+  padding: 0 0 10px 0;
+}
+
+input {
+  width: 250px;
+  height: 20px;
+  padding: 2px;
+  border-color: #fff;
+  border-width: 2px;
+  border-style: inset;
+  border-radius: 3px;
+  margin-bottom: 15px;
+}
+
+textarea {
+  width: 250px;
+  height: 80px;
+  padding: 2px;
+  border-color: #fff;
+  border-width: 2px;
+  border-style: inset;
+  border-radius: 3px;
+}
+
+button {
+  width: 80px;
+  height: 25px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 20px;
+  border-color: #fff;
+  border-width: 2px;
+  border-style: outset;
+  border-radius: 3px;
+}
+
+button:active {
+  border-style: inset;
+}
+
+.icons {
+  font-size: xx-large;
+  margin-top: 8px;
+  color: #ccc;
+}
+
+.icon {
+  margin-left: 15px;
+}
+
+iframe {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+footer {
+  padding: 20px;
+  font-size: smaller;
+}
+
+@media (max-width: 420px) {
+  body {
+    font-size: unset;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (max-width: 1025px) {
+  nav {
+    background: none;
+    -webkit-background-clip: unset;
+    background-clip: unset;
+  }
+  .red {
+    color: #ee2233;
+    -webkit-text-fill-color: #ee2233;
+  }
+  .yellow {
+    color: #eebb33;
+    -webkit-text-fill-color: #eebb33;
+  }
+  .green {
+    color: #22bb33;
+    -webkit-text-fill-color: #22bb33;
+  }
+  .blue { 
+    color: #2299ee;
+    -webkit-text-fill-color: #2299ee;
   }
 }
